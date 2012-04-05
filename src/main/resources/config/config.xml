@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <globalintervalrestriction>1</globalintervalrestriction>
+    <providers>
+        <provider>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://news.yahoo.com/rss/</sourceurl>
+                <publishuri>yahoo.news</publishuri>
+                <description>All the latest crime information.</description>
+                <intervalrestriction>300</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://news.google.com/news?pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;topic=b&amp;output=rss</sourceurl>
+                <publishuri>google.business</publishuri>
+                <description>All the latest business information.</description>
+                <intervalrestriction>60</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://lenta.ru/rss/</sourceurl>
+                <publishuri>lenta.news</publishuri>
+                <description>All the latest news.</description>
+                <intervalrestriction>20</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://tech.onliner.by/feed</sourceurl>
+                <publishuri>onliner.news</publishuri>
+                <description>onliner.by</description>
+                <intervalrestriction>10</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://rss.cnn.com/rss/edition.rss</sourceurl>
+                <publishuri>cnn.news</publishuri>
+                <description>CNN Top Stories</description>
+                <intervalrestriction>2</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://championat.ru.feedsportal.com/c/33155/fe.ed/www.championat.ru/xml/rss.xml</sourceurl>
+                <publishuri>championat.news</publishuri>
+                <description>Championat.com latest news</description>
+                <intervalrestriction>2</intervalrestriction>
+            </feed>
+             <feed>
+                <active>yes</active>
+                <sourceurl>http://pogoda.by/rss2/cityrss.php?q=26850</sourceurl>
+                <publishuri>pogoda.news</publishuri>
+                <description>Pogoda Minsk</description>
+                <intervalrestriction>3</intervalrestriction>
+            </feed>
+        </provider>
+    </providers>
+</configuration>
