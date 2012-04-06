@@ -12,17 +12,11 @@
             </feed>
             <feed>
                 <active>yes</active>
-                <sourceurl>http://news.google.com/news?pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;topic=b&amp;output=rss</sourceurl>
+                <sourceurl>http://news.google.com/news?pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;topic=b&amp;output=rss
+                </sourceurl>
                 <publishuri>google.business</publishuri>
                 <description>All the latest business information.</description>
                 <intervalrestriction>60</intervalrestriction>
-            </feed>
-            <feed>
-                <active>yes</active>
-                <sourceurl>http://lenta.ru/rss/</sourceurl>
-                <publishuri>lenta.news</publishuri>
-                <description>All the latest news.</description>
-                <intervalrestriction>20</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
@@ -45,11 +39,18 @@
                 <description>Championat.com latest news</description>
                 <intervalrestriction>2</intervalrestriction>
             </feed>
-             <feed>
+            <feed>
                 <active>yes</active>
                 <sourceurl>http://pogoda.by/rss2/cityrss.php?q=26850</sourceurl>
                 <publishuri>pogoda.news</publishuri>
                 <description>Pogoda Minsk</description>
+                <intervalrestriction>3</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://habrahabr.ru/rss/hubs/</sourceurl>
+                <publishuri>habr.news</publishuri>
+                <description>Habrahabr News</description>
                 <intervalrestriction>3</intervalrestriction>
             </feed>
         </provider>
