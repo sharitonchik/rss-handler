@@ -12,6 +12,13 @@
             </feed>
             <feed>
                 <active>yes</active>
+                <sourceurl>http://news.google.com/news?pz=1;cf=all;ned=us;hl=en&amp;topic=tc&amp;output=rss</sourceurl>
+                <publishuri>google.tech</publishuri>
+                <description>Google tech News</description>
+                <intervalrestriction>3</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
                 <sourceurl>http://news.google.com/news?pz=1&amp;cf=all&amp;ned=us&amp;hl=en&amp;topic=b&amp;output=rss
                 </sourceurl>
                 <publishuri>google.business</publishuri>
@@ -20,10 +27,31 @@
             </feed>
             <feed>
                 <active>yes</active>
+                <sourceurl>http://habrahabr.ru/rss/hubs/</sourceurl>
+                <publishuri>habr.news</publishuri>
+                <description>Habrahabr News</description>
+                <intervalrestriction>3</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://creep.ru/rss.xml</sourceurl>
+                <publishuri>creep.news</publishuri>
+                <description>Creep News</description>
+                <intervalrestriction>3</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
                 <sourceurl>http://tech.onliner.by/feed</sourceurl>
                 <publishuri>onliner.news</publishuri>
                 <description>onliner.by</description>
                 <intervalrestriction>10</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://pogoda.by/rss2/cityrss.php?q=26850</sourceurl>
+                <publishuri>pogoda.news</publishuri>
+                <description>Pogoda Minsk</description>
+                <intervalrestriction>3</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
@@ -38,20 +66,6 @@
                 <publishuri>championat.news</publishuri>
                 <description>Championat.com latest news</description>
                 <intervalrestriction>2</intervalrestriction>
-            </feed>
-            <feed>
-                <active>yes</active>
-                <sourceurl>http://pogoda.by/rss2/cityrss.php?q=26850</sourceurl>
-                <publishuri>pogoda.news</publishuri>
-                <description>Pogoda Minsk</description>
-                <intervalrestriction>3</intervalrestriction>
-            </feed>
-            <feed>
-                <active>yes</active>
-                <sourceurl>http://habrahabr.ru/rss/hubs/</sourceurl>
-                <publishuri>habr.news</publishuri>
-                <description>Habrahabr News</description>
-                <intervalrestriction>3</intervalrestriction>
             </feed>
         </provider>
     </providers>

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(':radio').click(function() {
         var path = "/rss?news=";
-        $('#content').attr('src', path + $(this).val());
+        $('#rssContent').attr('src', path + $(this).val());
 //        var dataObject = {};
 //        dataObject[$(this).attr('name')] = $(this).val();
 //        $.ajax({

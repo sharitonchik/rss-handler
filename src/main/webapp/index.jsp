@@ -20,8 +20,28 @@
             </label>
         </li>
         <li>
+            <label> Google Tech
+                <input type="radio" name="news" value="google.tech"/>
+            </label>
+        </li>
+        <li>
             <label> Onliner
                 <input type="radio" name="news" value="onliner.news"/>
+            </label>
+        </li>
+        <li>
+            <label> Habr
+                <input type="radio" name="news" value="habr.news"/>
+            </label>
+        </li>
+        <li>
+            <label> Creep
+                <input type="radio" name="news" value="creep.news"/>
+            </label>
+        </li>
+        <li>
+            <label> Pogoda Minsk
+                <input type="radio" name="news" value="pogoda.news"/>
             </label>
         </li>
         <li>
@@ -34,18 +54,8 @@
                 <input type="radio" name="news" value="championat.news"/>
             </label>
         </li>
-        <li>
-            <label> Pogoda Minsk
-                <input type="radio" name="news" value="pogoda.news"/>
-            </label>
-        </li>
-        <li>
-            <label> Habr
-                <input type="radio" name="news" value="habr.news"/>
-            </label>
-        </li>
     </ul>
 </form>
-<iframe id="content" src="" style="width:80%; height:700px; overflow:auto;"></iframe>
+<iframe id="rssContent" src="" style="width:80%; height:800px; overflow:auto;"></iframe>
 </body>
 </html>
