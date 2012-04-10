@@ -1,20 +1,27 @@
 package by.mgvrk.practice.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import java.util.Set;
+
 /**
  * User: sharitonchik
  */
 public class SequenceGenerator {
+    @Autowired
+    @Qualifier("pref")
     private String prefix;
-    private String suffix;
+    private Set<Object> suffixes;
     private int initial;
     private int counter;
 
     public SequenceGenerator() {
     }
 
-    public SequenceGenerator(String prefix, String suffix, int initial) {
+    public SequenceGenerator(String prefix, Set<Object> suffixes, int initial) {
         this.prefix = prefix;
-        this.suffix = suffix;
+        this.suffixes = suffixes;
         this.initial = initial;
     }
 
@@ -22,8 +29,8 @@ public class SequenceGenerator {
         this.prefix = prefix;
     }
 
-    public void setSuffix(String suffix) {
-        this.suffix = suffix;
+    public void setSuffixes(Set<Object> suffixes) {
+        this.suffixes = suffixes;
     }
 
     public void setInitial(int initial) {
@@ -35,8 +42,9 @@ public class SequenceGenerator {
 
         buffer.append(prefix);
         buffer.append(initial + counter++);
-        buffer.append(suffix);
-
+        for (Object suffix : suffixes) {
+            buffer.append(suffix);
+        }
         return buffer.toString();
     }
 }
