@@ -24,7 +24,7 @@ public class NewsController {
         SyndFeedOutput out = new SyndFeedOutput();
         SyndFeed feeds = rssService.getSyndFeed(news);
 
-        resp.setContentType("text/xml; charset=utf-8");
+        resp.setContentType("application/rss+xml; charset=utf-8");
 
         try {
             out.output(feeds, resp.getWriter());

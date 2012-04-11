@@ -22,6 +22,13 @@ import java.util.List;
 public class ProvidersBuilder {
     private Document dom;
     private List<Provider> providersList = new ArrayList<Provider>();
+    private final String TEXT_TAG = "#text";
+    private final String PROVIDERS = "providers";
+    private final String ACTIVE = "active";
+    private final String SOURCE_URL = "sourceurl";
+    private final String PUBLISH_URL = "publishuri";
+    private final String DESCRIPTION = "description";
+    private final String INTERVAL_RESTRICTION = "intervalrestriction";
 
     public List<Provider> getProviders(String fileName) {
         InputStream stream = null;
@@ -63,7 +70,7 @@ public class ProvidersBuilder {
         for (int i = 0; i < children.getLength(); i++) {
             Node child = children.item(i);
 
-            if (child.getNodeName().equals("providers")) {
+            if (child.getNodeName().equals(PROVIDERS)) {
                 parseProviders(child.getChildNodes());
             }
         }
@@ -71,7 +78,7 @@ public class ProvidersBuilder {
 
     private void parseProviders(NodeList providers) {
         for (int i = 0; i < providers.getLength(); i++) {
-            if (!providers.item(i).getNodeName().equals("#text")) {
+            if (!providers.item(i).getNodeName().equals(TEXT_TAG)) {
                 providersList.add(getProvider(providers.item(i)));
 
             }
@@ -89,7 +96,7 @@ public class ProvidersBuilder {
         List<Feed> feedsList = new ArrayList<Feed>();
 
         for (int i = 0; i < feeds.getLength(); i++) {
-            if (!feeds.item(i).getNodeName().equals("#text")) {
+            if (!feeds.item(i).getNodeName().equals(TEXT_TAG)) {
                 feedsList.add(getFeed(feeds.item(i)));
             }
         }
@@ -102,24 +109,24 @@ public class ProvidersBuilder {
         Feed feed = new Feed();
 
         for (int i = 0; i < feedConfig.getLength(); i++) {
-            if (!feedConfig.item(i).getNodeName().equals("#text")) {
-                if (feedConfig.item(i).getNodeName().equals("active")) {
+            if (!feedConfig.item(i).getNodeName().equals(TEXT_TAG)) {
+                if (feedConfig.item(i).getNodeName().equals(ACTIVE)) {
                     feed.setActive(feedConfig.item(i).getFirstChild().getNodeValue());
                 }
 
-                if (feedConfig.item(i).getNodeName().equals("sourceurl")) {
+                if (feedConfig.item(i).getNodeName().equals(SOURCE_URL)) {
                     feed.setUrl(feedConfig.item(i).getFirstChild().getNodeValue());
                 }
 
-                if (feedConfig.item(i).getNodeName().equals("publishuri")) {
+                if (feedConfig.item(i).getNodeName().equals(PUBLISH_URL)) {
                     feed.setUri(feedConfig.item(i).getFirstChild().getNodeValue());
                 }
 
-                if (feedConfig.item(i).getNodeName().equals("description")) {
+                if (feedConfig.item(i).getNodeName().equals(DESCRIPTION)) {
                     feed.setDescription(feedConfig.item(i).getFirstChild().getNodeValue());
                 }
 
-                if (feedConfig.item(i).getNodeName().equals("intervalrestriction")) {
+                if (feedConfig.item(i).getNodeName().equals(INTERVAL_RESTRICTION)) {
                     feed.setInterval(feedConfig.item(i).getFirstChild().getNodeValue());
                 }
             }

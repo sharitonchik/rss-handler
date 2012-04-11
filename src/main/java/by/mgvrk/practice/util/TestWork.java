@@ -1,6 +1,7 @@
 package by.mgvrk.practice.util;
 
 import by.mgvrk.practice.spring.Person;
+import by.mgvrk.practice.spring.PersonConfiguration;
 import by.mgvrk.practice.spring.SequenceGenerator;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -25,6 +26,8 @@ public class TestWork {
 
         Person person = (Person) context.getBean("sergey");
 
+        PersonConfiguration configuration = new PersonConfiguration();
+        configuration.sergey();
         System.out.println(person.getName());
     }
 }
