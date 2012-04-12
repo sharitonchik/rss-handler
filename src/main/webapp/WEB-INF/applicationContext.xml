@@ -9,5 +9,6 @@
 
     <context:annotation-config/>
     <bean class="by.mgvrk.practice.spring.NewsController"/>
+    <bean class="by.mgvrk.practice.spring.PageReturnController"/>
 
 </beans>
