@@ -127,7 +127,7 @@ public class ProvidersBuilder {
                 }
 
                 if (feedConfig.item(i).getNodeName().equals(INTERVAL_RESTRICTION)) {
-                    feed.setInterval(feedConfig.item(i).getFirstChild().getNodeValue());
+                    feed.setInterval(Integer.parseInt(feedConfig.item(i).getFirstChild().getNodeValue()));
                 }
             }
         }

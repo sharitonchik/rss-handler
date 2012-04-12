@@ -8,7 +8,7 @@ public class Feed {
     private String url;
     private String uri;
     private String description;
-    private String interval;
+    private int interval;
 
     public Feed() {
     }
@@ -45,11 +45,11 @@ public class Feed {
         this.description = description;
     }
 
-    public String getInterval() {
+    public int getInterval() {
         return interval;
     }
 
-    public void setInterval(String interval) {
+    public void setInterval(int interval) {
         this.interval = interval;
     }
 }

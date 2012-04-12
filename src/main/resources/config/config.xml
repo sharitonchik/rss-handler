@@ -15,7 +15,7 @@
                 <sourceurl>http://news.google.com/news?pz=1;cf=all;ned=us;hl=en&amp;topic=tc&amp;output=rss</sourceurl>
                 <publishuri>google.tech</publishuri>
                 <description>Google tech News</description>
-                <intervalrestriction>3</intervalrestriction>
+                <intervalrestriction>10</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
@@ -30,14 +30,14 @@
                 <sourceurl>http://habrahabr.ru/rss/hubs/</sourceurl>
                 <publishuri>habr.news</publishuri>
                 <description>Habrahabr News</description>
-                <intervalrestriction>3</intervalrestriction>
+                <intervalrestriction>1</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
                 <sourceurl>http://creep.ru/rss.xml</sourceurl>
                 <publishuri>creep.news</publishuri>
                 <description>Creep News</description>
-                <intervalrestriction>3</intervalrestriction>
+                <intervalrestriction>30</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
@@ -51,21 +51,21 @@
                 <sourceurl>http://pogoda.by/rss2/cityrss.php?q=26850</sourceurl>
                 <publishuri>pogoda.news</publishuri>
                 <description>Pogoda Minsk</description>
-                <intervalrestriction>3</intervalrestriction>
+                <intervalrestriction>180</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
                 <sourceurl>http://rss.cnn.com/rss/edition.rss</sourceurl>
                 <publishuri>cnn.news</publishuri>
                 <description>CNN Top Stories</description>
-                <intervalrestriction>2</intervalrestriction>
+                <intervalrestriction>200</intervalrestriction>
             </feed>
             <feed>
                 <active>yes</active>
                 <sourceurl>http://championat.ru.feedsportal.com/c/33155/fe.ed/www.championat.ru/xml/rss.xml</sourceurl>
                 <publishuri>championat.news</publishuri>
                 <description>Championat.com latest news</description>
-                <intervalrestriction>2</intervalrestriction>
+                <intervalrestriction>200</intervalrestriction>
             </feed>
         </provider>
     </providers>
