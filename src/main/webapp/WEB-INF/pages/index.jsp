@@ -3,8 +3,8 @@
 <html>
 <head>
     <title>Rss</title>
-    <script type="text/javascript" src="javascripts/jquery-1.7.min.js">//</script>
-    <script type="text/javascript" src="javascripts/rss.js">//</script>
+    <script type="text/javascript" src="../../javascripts/jquery-1.7.min.js">//</script>
+    <script type="text/javascript" src="../../javascripts/rss.js">//</script>
 </head>
 <body>
 <form action="/rss">
@@ -56,6 +56,6 @@
         </li>
     </ul>
 </form>
-<iframe id="rssContent" src="" style="width:80%; height:800px; overflow:auto;"></iframe>
+<iframe id="rssContent" src="../../" style="width:80%; height:800px; overflow:auto;"></iframe>
 </body>
 </html>
