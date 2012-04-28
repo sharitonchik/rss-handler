@@ -9,7 +9,7 @@ import java.io.IOException;
  * User: sharitonchik
  */
 public class ResourcesReturner {
-    private final String PATH = "/home/sharitonchik/IdeaProjects/rss-handler/src/main/webapp";
+    private final String PATH = "E:\\For mgvrk\\rss-handler\\src\\main\\webapp\\";
 
     public String getResource(String pathFile) {
         File jsFile = new File(PATH + pathFile);

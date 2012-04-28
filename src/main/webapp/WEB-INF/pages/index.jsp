@@ -45,6 +45,26 @@
             </label>
         </li>
         <li>
+            <label> D.Gray-man
+                <input type="radio" name="news" value="man"/>
+            </label>
+        </li>
+        <li>
+            <label> Gamaran
+                <input type="radio" name="news" value="gamaran"/>
+            </label>
+        </li>
+        <li>
+            <label> Breaker
+                <input type="radio" name="news" value="breaker"/>
+            </label>
+        </li>
+        <li>
+            <label> Hunter
+                <input type="radio" name="news" value="hunter"/>
+            </label>
+        </li>
+        <li>
             <label> Cnn
                 <input type="radio" name="news" value="cnn.news"/>
             </label>

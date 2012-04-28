@@ -67,6 +67,34 @@
                 <description>Championat.com latest news</description>
                 <intervalrestriction>200</intervalrestriction>
             </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://readmanga.ru/rss/manga?name=gamaran</sourceurl>
+                <publishuri>gamaran</publishuri>
+                <description>Gamaran</description>
+                <intervalrestriction>200</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://readmanga.ru/rss/manga?name=the_breaker__new_waves</sourceurl>
+                <publishuri>breaker</publishuri>
+                <description>Breaker</description>
+                <intervalrestriction>200</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://readmanga.ru/rss/manga?name=hunter_x_hunter</sourceurl>
+                <publishuri>hunter</publishuri>
+                <description>Hunter</description>
+                <intervalrestriction>200</intervalrestriction>
+            </feed>
+            <feed>
+                <active>yes</active>
+                <sourceurl>http://readmanga.ru/rss/manga?name=d_gray_man</sourceurl>
+                <publishuri>man</publishuri>
+                <description>D.Gray-man</description>
+                <intervalrestriction>200</intervalrestriction>
+            </feed>
         </provider>
     </providers>
 </configuration>
